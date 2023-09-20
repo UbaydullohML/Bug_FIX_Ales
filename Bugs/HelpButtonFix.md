@@ -36,6 +36,13 @@ UI_TestFlight_HELPAlert: Message key.
   
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/dcf6c663-30d3-4a28-b635-41ccff425dd1)
 
+    UI_TestFlight_HELPAlert,
+
+    enText.Add(TextType.UI_TestFlight_HELPAlert, "The basic flight test is a procedure to determine the presence or absence of equipment\n" +
+    " malfunctions by conducting basic flight tests before operating the drone.\n");
+
+- UI_TestFlight_HELPAlert is a unique identifier or key. enText.Add(...) associates the key with an English text description.
+
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/2dedbd9a-8d9f-4241-9437-72054da78769)
 
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/115e159e-04c1-4f66-9bae-241b1879d6a2)
