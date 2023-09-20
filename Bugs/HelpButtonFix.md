@@ -7,6 +7,15 @@
   
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/5d5ad339-8120-4431-9e62-5d83b992d50c)
 
+    RadWindow.Alert(new DialogParameters { Owner = this, Header = "Help", Content = LanguageText.CurrentLanguage[LanguageText.TextType.UI_TestFlight_HELPAlert] });
+- RadWindow.Alert: Display dialog.
+DialogParameters: Dialog settings.
+Owner = this: Dialog context.
+Header = "Help": Dialog title.
+Content: Dialog message.
+LanguageText: Text localization.
+UI_TestFlight_HELPAlert: Message key.
+
         private void TestFlightHelpButton(object sender, NavigationButtonsEventArgs e)
         {
         if (this.spHelp.Visibility == Visibility.Visible)
@@ -19,6 +28,7 @@
         }
         RadWindow.Alert(new DialogParameters { Owner = this, Header = "Help", Content = LanguageText.CurrentLanguage[LanguageText.TextType.UI_TestFlight_HELPAlert] });
         }
+
 
 
 ### Second, inside the LanguageText.cs file
