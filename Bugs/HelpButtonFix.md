@@ -7,17 +7,17 @@
   
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/5d5ad339-8120-4431-9e62-5d83b992d50c)
 
-            private void TestFlightHelpButton(object sender, NavigationButtonsEventArgs e)
+        private void TestFlightHelpButton(object sender, NavigationButtonsEventArgs e)
         {
-            if (this.spHelp.Visibility == Visibility.Visible)
-            {
-                Hide_HelpModelView();
-            }
-            else
-            {
-                Show_HelpModelView();
-            }
-            RadWindow.Alert(new DialogParameters { Owner = this, Header = "Help", Content = LanguageText.CurrentLanguage[LanguageText.TextType.UI_TestFlight_HELPAlert] });
+        if (this.spHelp.Visibility == Visibility.Visible)
+        {
+            Hide_HelpModelView();
+        }
+        else
+        {
+            Show_HelpModelView();
+        }
+        RadWindow.Alert(new DialogParameters { Owner = this, Header = "Help", Content = LanguageText.CurrentLanguage[LanguageText.TextType.UI_TestFlight_HELPAlert] });
         }
 
 
