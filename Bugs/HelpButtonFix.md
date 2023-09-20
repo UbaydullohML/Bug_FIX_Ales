@@ -46,3 +46,15 @@ UI_TestFlight_HELPAlert: Message key.
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/2dedbd9a-8d9f-4241-9437-72054da78769)
 
 ![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/115e159e-04c1-4f66-9bae-241b1879d6a2)
+
+
+
+### Solution finding with similar case code
+![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/f13a1ff4-d702-441e-8acb-5061ecfb2801)
+
+- ctrl + shift + f, to find the Menu_HelpItem and f12 to enter where it is located , and shift to there the location of that from below system search
+![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/f759cc65-5a53-49de-a0fb-e8974cba1e21)
+
+![image](https://github.com/UbaydullohML/Bug_FIX_Ales/assets/75980506/b48122f4-554e-42b5-af7e-3860160c4bd1)
+- by searching the HelpMenu_EventHandler
+
