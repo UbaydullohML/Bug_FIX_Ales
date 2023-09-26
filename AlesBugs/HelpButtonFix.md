@@ -14,7 +14,7 @@ Owner = this: Dialog context where the code is executed.
 Header = "Help": Dialog title.
 Content: Dialog message.
 LanguageText: Text localization.
-UI_TestFlight_HELPAlert: Message key.
+UI_TestFlight_HELPAlert: Message key.   
 
         private void TestFlightHelpButton(object sender, NavigationButtonsEventArgs e)
         {
