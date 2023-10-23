@@ -13,3 +13,4 @@ Note: System.Drawing.Common is only supported on Windows. If you are targeting a
 Use the Official NuGet Package Source:
 
     dotnet add package CsvHelper -s https://api.nuget.org/v3/index.json
+The official NuGet package source is the most reliable source for packages. You can specify it explicitly when adding the package. Use the -s option to specify the NuGet.org source:
