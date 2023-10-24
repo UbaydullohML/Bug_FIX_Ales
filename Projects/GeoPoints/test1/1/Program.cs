@@ -1,4 +1,4 @@
-﻿using CsvHelper;
+using CsvHelper;
 using CsvHelper.Configuration;
 using System;
 using System.Globalization;
@@ -30,15 +30,13 @@ class Program // main method
         var records = csv.GetRecords<GeoPointstest>().ToList(); // GetRecords method is used to read and parse csv file into list of objects
         // type GeoPointstest, records contains all data from csv file, records list
 
-        // create a set to store unique records based on the wp lat, wp lon, wp alt
-        var uniquerecords = new HashSet<(float,float,float)>(); // A HashSet named uniquerecords is created to store unique records based on a unique key.
+        // create a set to store unique records based on the specified columns 
+        var uniquerecords = new HashSet<string>(); // A HashSet named uniquerecords is created to store unique records based on a unique key.
 
         foreach (var record in records)
         {
             // create a unique key based on the columns you want to chek for duplicate
-            var uniqueKey1 = (record.WP_Lat,record.WP_Lon,record.WP_Alt);
-
-            //var uniqueKey1 = $"{record.WP_Lat}_{record.WP_Lon}_{record.WP_Alt}_{record.Gimbal_aw}_{record.Gimbal_Pitch}";
+            var uniqueKey1 = $"{record.WP_Lat}_{record.WP_Lon}_{record.WP_Alt}_{record.Gimbal_aw}_{record.Gimbal_Pitch}";
             // Inside the loop, a unique key, uniqueKey1, is created by concatenating the values of the "WP_Lat," 
 
             // check if the unqiue key is not in the set
