@@ -23,3 +23,9 @@ Here is an example of how to install the NETStandard.Library NuGet package to th
 
 
     dotnet add package NETStandard.Library --version 2.0.3 --source https://api.nuget.org/v3/index.json
+
+
+4. 
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/3747311b-b584-400a-bed0-c77c55579492)
+
