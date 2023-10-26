@@ -33,3 +33,16 @@ Here is an example of how to install the NETStandard.Library NuGet package to th
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/3747311b-b584-400a-bed0-c77c55579492)
 
+
+5. how to add more package sources online, i have telerik nuget, mic vs offline packages, i need online one which id not face to much problems to run my project.
+
+either code 
+
+    dotnet nuget add source nuget.org https://api.nuget.org/v3/index.json
+
+or 
+Nuget Package sources:
+Name: nuget.org
+Source: https://api.nuget.org/v3/index.json
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/edc1175b-5364-4162-94ea-d9cb43df88d4)
+
