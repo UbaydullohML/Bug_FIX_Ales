@@ -42,7 +42,9 @@ either code
 
 or 
 Nuget Package sources:
+
 Name: nuget.org
+
 Source: https://api.nuget.org/v3/index.json
 
 
