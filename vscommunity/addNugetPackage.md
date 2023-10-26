@@ -25,7 +25,11 @@ Here is an example of how to install the NETStandard.Library NuGet package to th
     dotnet add package NETStandard.Library --version 2.0.3 --source https://api.nuget.org/v3/index.json
 
 
-4. 
+4. "C:\Users\ubayd\source\repos\argosALES_desktop\Srtm\bin\NoAzure_Debug\Alpinechough.Srtm.dll" could not be resolved because it was built against the ".NETFramework,Version=v4.8" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.7.1".
+
+
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/fd20f831-7a8d-45a5-9de4-7a8fb7d31d6b)
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/3747311b-b584-400a-bed0-c77c55579492)
 
