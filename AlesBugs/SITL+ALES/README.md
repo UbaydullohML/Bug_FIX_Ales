@@ -59,4 +59,30 @@ connect the f1 cable and ethernet to e2 and power cable like below image
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/e033ca15-ad8c-4f72-bb39-ca50937e999a)
 
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/6642d962-87e5-4cb6-b2b6-a9c0b0a46ef5)
 
+- here is the SITL
+
+      sim_vehicle.py -w --map --console -v ArduCopter --out=/dev/ttyUSB0,115200 
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/4301afb5-f5d0-4d75-9b9e-b0c58d9a7d7f)
+
+- and the ALES simulation
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/2a703b5e-8fb4-4fa6-a0bf-3b110e1c6e8e)
+
+# 4 to change the locations 
+
+- in linux search file like below 
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/b33e8c50-8aa9-413e-bff4-4c2450f47efc)
+
+- locations.txt
+- inside file, there is a information about name, latitude, longitude, altitude and heading.
+ 
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/10a270d1-4d57-4cc0-9ffc-6fa0e7d9a20f)
+
+enter the code like below 
+
+    sim_vehicle.py -w --map --console -v ArduCopter --out=/dev/ttyUSB0,115200 -L AVC_copter
+- and just connect the sitl with ales,and everthing is fine. 
