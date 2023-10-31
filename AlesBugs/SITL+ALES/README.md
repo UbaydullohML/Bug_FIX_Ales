@@ -39,5 +39,14 @@ https://github.com/argosdyne/BirdCom_AB120/releases
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/5bd5232e-e7e3-4fd8-b55a-8593dc5c00ef)
 
+### 2.2 check the mqtt explorer connecting with below method:
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/3d26dfdb-d42d-4c08-95cf-4b60d2461339)
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/585ab87a-f27c-48cf-8a1d-8a4a3ae525a7)
+
+
+
+# 3 connecting the ALES with SITL
 
 
