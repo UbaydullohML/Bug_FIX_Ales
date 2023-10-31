@@ -14,3 +14,22 @@ id argosdyne, p Argos2022@)@@
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/eced892f-b842-4e69-8f2f-88ad002b6adb)
 
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/a5796226-ccf6-4b45-b240-f0c89897f6c1)
+
+- check the ip address part
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/2a953783-f0c9-4578-ad07-756a22a08fb8)
+
+
+
+### 2.1 and upgrade the latest ab120 version after making aif file. like below
+
+https://github.com/argosdyne/BirdCom_AB120/releases
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/eb1aa26e-c6fa-444a-831f-5dc7bff6d9a5)
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/bbcdc931-46da-4c30-bd77-28cac778a133)
+
+
+
