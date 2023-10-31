@@ -31,5 +31,13 @@ https://github.com/argosdyne/BirdCom_AB120/releases
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/bbcdc931-46da-4c30-bd77-28cac778a133)
 
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/e0fab601-924b-4dab-8faf-bf72f4506e33)
+
+- make aif file like below using .bin file for birdcom new firmware upgrade
+
+
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/5bd5232e-e7e3-4fd8-b55a-8593dc5c00ef)
+
 
 
