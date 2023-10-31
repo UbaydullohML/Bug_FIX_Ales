@@ -49,4 +49,14 @@ https://github.com/argosdyne/BirdCom_AB120/releases
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/dd9e6874-d7be-45dc-a085-fb7b84be060b)
 
+connect the f1 cable and ethernet to e2 and power cable like below image 
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/c05b291a-1219-4e72-8eb6-3ee39ce56fc3)
+
+- find the same silicon labs com4  in pc and linux VM like below
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/a7599213-c264-4055-80c4-f65da98220b4)
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/e033ca15-ad8c-4f72-bb39-ca50937e999a)
+
 
