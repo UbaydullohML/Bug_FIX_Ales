@@ -8,8 +8,6 @@ id argosdyne, p Argos2022@)@@
 
 # 2 check everything in Birdcom config while connecting the ab120
 
-![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/4f085ce8-6412-41c0-81a1-4a430cdb96fc)
-
 - connect the ab120 with connecting power cable, d2 and e2 (ethernet) with internet. 
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/eced892f-b842-4e69-8f2f-88ad002b6adb)
@@ -48,5 +46,7 @@ https://github.com/argosdyne/BirdCom_AB120/releases
 
 
 # 3 connecting the ALES with SITL
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/dd9e6874-d7be-45dc-a085-fb7b84be060b)
 
 
