@@ -19,3 +19,6 @@ To downsample a dataset of latitude and longitude coordinates while maintaining 
 9. **Optimize for Even Spacing**: If even spacing is a priority, you may need to use more sophisticated algorithms to optimize the selection of points for a uniform distribution.
 
 The choice of method depends on the characteristics of your dataset and your specific requirements. It's essential to strike a balance between reducing the dataset size and maintaining meaningful and well-distributed points. You may need to experiment with different methods and parameters to achieve the desired result. Keep in mind that the choice of method can also depend on the specific tools or programming languages you're using for the downsampling.
+
+
+![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/7cda4c67-a78a-4177-bce8-62a3ddbe117a)
