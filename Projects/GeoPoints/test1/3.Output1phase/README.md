@@ -30,9 +30,11 @@
 - program3.cs
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/a3310ed8-3662-400e-ba0b-4bffcdacfa73)
+
 - from this
 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/2ddd00fc-0e38-4afa-8b6e-5852012e6ed0)
 
-- to below result 
+- to below result
+- 
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/86bf26ec-aa2d-43c7-8abe-baba5f294fe2)
