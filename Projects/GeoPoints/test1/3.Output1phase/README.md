@@ -7,7 +7,7 @@
 ![image](https://github.com/UbaydullohML/VS-Projects_BugsFix/assets/75980506/06471da9-ccd9-4fd3-a917-24193a4be140)
 
 
-# 3 with some additions
+# 2 with some additions
             int id = 0;
         // write the unique records with an incrementing wp id and path id 
         for (int i = 0; i < records.Count; i++)
