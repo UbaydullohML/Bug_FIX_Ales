@@ -1,7 +1,7 @@
 using Accord.MachineLearning; // contains classes needed to perform K-means clustering
 using CsvHelper;
 using CsvHelper.Configuration;
-using System.Globalization;
+using System.Globalization;  
 
 public class GeoPointstest  // define a class that representes your data structure
 {
