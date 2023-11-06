@@ -7,6 +7,7 @@ public class GeoPointstest  // define a class that representes your data structu
 {
     /*    public int WP_ID { get; set; }
         public int PATH_ID { get; set; }*/
+    public int Index { get; set; }
     public string Type { get; set; } // class named Geopointstest shows structure of data
     public double WP_Lat { get; set; }
     public double WP_Lon { get; set; }
