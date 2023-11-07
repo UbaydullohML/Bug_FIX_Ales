@@ -1,7 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using Accord.MachineLearning;
 using CsvHelper;
 using CsvHelper.Configuration;
-using System.Collections.Generic;
 using System.Globalization;
 
 public class GeoPointstest
@@ -29,59 +32,63 @@ class Program
         KMeans kmeans = new KMeans(n_clusters);
         KMeansClusterCollection clusters = kmeans.Learn(X1);
 
-
         var centroids = clusters.Centroids;
-        // Create a HashSet to store the selected data points closest to each centroids
+        // Create a HashSet to store the selected data points closest to each centroid
         HashSet<GeoPointstest> selectedPoints = new HashSet<GeoPointstest>();
+
         // Iterate through each centroid in the list of centroids
         foreach (double[] centroid in centroids)
         {
-            // initialize a variable to keep track of minimum distance, starting with large value
+            // Initialize a variable to keep track of minimum distance, starting with a large value
             double minDistance = double.MaxValue;
-            // initialize a variable to store data point that is currently the closesest to centroid
+            // Initialize a variable to store data point that is currently the closest to centroid
             GeoPointstest closestPoint = null;
 
-            // iterate through each data point in list of records
+            // Iterate through each data point in the list of records
             foreach (GeoPointstest dataPoint in records)
             {
-                // calculate distance between current centroid and the current data point
-                double distance = CalculateDistance(centroid, dataPoint);
-                // check if th calculated distance is smaller than current minimum distance
-                if (distance < minDistance)
+                // Check if the data point has a non-zero caution value
+                if (dataPoint.Caution != 0)
                 {
-                    // if it is, update min distance and set closest point to current data point
-                    minDistance = distance;
-                    closestPoint = dataPoint;
+                    // Add data point to selectedPoints
+                    selectedPoints.Add(dataPoint);
+                }
+                else
+                {
+                    // Calculate distance between current centroid and the current data point
+                    double distance = CalculateDistance(centroid, dataPoint);
+                    // Check if the calculated distance is smaller than the current minimum distance
+                    if (distance < minDistance)
+                    {
+                        // If it is, update min distance and set closest point to current data point
+                        minDistance = distance;
+                        closestPoint = dataPoint;
+                    }
                 }
             }
 
-            // add data point that is closest to current centroid to selectedPoints hashset
+            // Add data point that is closest to the current centroid to selectedPoints hashset
             if (closestPoint != null)
             {
                 selectedPoints.Add(closestPoint);
-
-                if (closestPoint.Caution !=0)
-                {
-                    selectedPoints.Add(closestPoint);
-                }
             }
         }
 
-        // sort the selected data points by Index column in ascending order 
-        var sortedSelectedPoints1 = selectedPoints.OrderBy(p => p.Index);
+        // Sort the selected data points by Index column in ascending order 
+        var sortedSelectedPoints = selectedPoints.OrderBy(p => p.Index);
 
         // Create a CSV writer to write the unique selected data points to a new CSV file
-        using var writer1 = new StreamWriter("ProgramOrderCaution.csv");
-        using var csvWriter1 = new CsvWriter(writer1, new CsvConfiguration(CultureInfo.InvariantCulture));
-        csvWriter1.WriteRecords(sortedSelectedPoints1);
+        using var writer = new StreamWriter("ProgramOrderedCaution.csv");
+        using var csvWriter = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture));
+        csvWriter.WriteRecords(sortedSelectedPoints);
     }
 
-    
     private static double CalculateDistance(double[] centroid, GeoPointstest dataPoint)
     {
-        // calculate the difference in lat between centroid and data point
+        // Calculate the difference in lat between centroid and data point
         double latDistance = centroid[0] - dataPoint.WP_Lat;
-        double lonDistance = centroid[1] - dataPoint.WP_Lon; // calculate difference in lon bet centroid and data point
-        return Math.Sqrt(latDistance * latDistance + lonDistance * lonDistance); // calculate eucledian distance by taking square root of sum of squared difference
+        double lonDistance = centroid[1] - dataPoint.WP_Lon;
+        // Calculate Euclidean distance by taking the square root of the sum of squared differences
+        return Math.Sqrt(latDistance * latDistance + lonDistance * lonDistance);
     }
 }
