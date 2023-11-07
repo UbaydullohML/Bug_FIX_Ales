@@ -66,7 +66,7 @@ class Program
         var sortedSelectedPoints1 = selectedPoints.OrderBy(p => p.Index);
 
         // Create a CSV writer to write the unique selected data points to a new CSV file
-        using var writer1 = new StreamWriter("unique_records1test4.csv");
+        using var writer1 = new StreamWriter("ProgramOrderedCaution.csv");
         using var csvWriter1 = new CsvWriter(writer1, new CsvConfiguration(CultureInfo.InvariantCulture));
         csvWriter1.WriteRecords(sortedSelectedPoints1);
     }
