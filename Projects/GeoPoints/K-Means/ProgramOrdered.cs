@@ -25,7 +25,7 @@ class Program
         // Use the original latitude and longitude values for clustering
         var X1 = records.Select(r => new double[] { r.WP_Lat, r.WP_Lon }).ToArray();
 
-        int n_clusters = 100;
+        int n_clusters = 200;
         KMeans kmeans = new KMeans(n_clusters);
         KMeansClusterCollection clusters = kmeans.Learn(X1);
 
