@@ -14,6 +14,14 @@
 
 - after bringing those files to above specified locations
 
-- check like below
+- check like below, first patrol path upload, and mission start after checking file is there:
 
-![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/352834de-a231-41c8-855c-b7dda3ec4ed6)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/8ba89bdb-e067-46c7-983d-1a25a39d0703)
+
+
+- in device log, we could check the path uload function how it is going on:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/10543666-39aa-42e3-8c1f-c66f8cddc00f)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/dc3b0066-112f-4d1a-9186-ad477fc436ba)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/f28a6cbb-3152-4fe0-b4bc-16b6658d9f2a)
