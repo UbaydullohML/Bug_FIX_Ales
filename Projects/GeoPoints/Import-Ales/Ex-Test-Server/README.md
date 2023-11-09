@@ -6,3 +6,7 @@
 
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/0ffa19c5-828c-4ea0-b9ef-0e5e58664b41)
+
+
+- To upload the files to my local storage for Ales
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1c97325d-b464-432c-bc83-20db22841f1d)
