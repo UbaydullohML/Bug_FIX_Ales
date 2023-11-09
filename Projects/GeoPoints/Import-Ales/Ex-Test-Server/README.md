@@ -9,4 +9,11 @@
 
 
 - To upload the files to my local storage for Ales
+  
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1c97325d-b464-432c-bc83-20db22841f1d)
+
+- after bringing those files to above specified locations
+
+- check like below
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/352834de-a231-41c8-855c-b7dda3ec4ed6)
