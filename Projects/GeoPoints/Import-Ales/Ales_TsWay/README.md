@@ -14,3 +14,7 @@ the PE_Handler.cs file short explanation what it does:
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/94277f50-c9bc-4819-b76c-16025776f240)
 
+
+Combination of both files:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7964350b-8666-473a-a54c-31a1db0e2529)
