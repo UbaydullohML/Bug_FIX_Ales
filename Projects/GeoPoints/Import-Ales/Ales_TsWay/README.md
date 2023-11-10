@@ -1,3 +1,11 @@
+ExternalTriggerEx.cs file short explanation what it does, first 1000 lines
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/6b2574cb-b3b0-4802-bd1f-f64372a68166)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/47362d07-fa0d-4bd0-bf50-d70cdf139fea)
+
+
+
 the PE_Handler.cs file short explanation what it does:
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/d57c56ae-4892-4eb9-9166-286ba19ccc21)
