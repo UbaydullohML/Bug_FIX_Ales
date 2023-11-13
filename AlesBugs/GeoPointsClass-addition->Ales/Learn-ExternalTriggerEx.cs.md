@@ -1,6 +1,7 @@
 1st: accessing the another Class method inside one file:
+           
            public class RoadWayPointItem
-       {
+           {
            public string strRoadName { get; set; }  // properties for road information
            public string strRoadNo { get; set; }
            public string strDirection { get; set; }
