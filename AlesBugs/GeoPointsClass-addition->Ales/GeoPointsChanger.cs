@@ -101,9 +101,12 @@ namespace argosgcs.argosGCS.PathPlanner
                         selectedPoints.Add(closestPoint);
                     }
                 }
+                
+            var sortedSelectedPoints1 = selectedPoints.OrderBy(p => p.nIndex);
+            
 
-                listSignCoord = selectedPoints.ToList();
-                return listSignCoord.Count;
+            listSignCoord = sortedSelectedPoints1.ToList();
+            return listSignCoord.Count;
             }
 
             private double CalculateDistance(double[] centroid, RoadWayPointItem dataPoint)
