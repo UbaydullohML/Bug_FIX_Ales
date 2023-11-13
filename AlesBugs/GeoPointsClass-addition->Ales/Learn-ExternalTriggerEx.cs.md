@@ -1,58 +1,57 @@
 1st: accessing the another Class method inside one file:
            
-           public class RoadWayPointItem
-           {
-           public string strRoadName { get; set; }  // properties for road information
-           public string strRoadNo { get; set; }
-           public string strDirection { get; set; }
-           public string strDistance { get; set; }
-           public double dLat { get; set; }
-           public double dLon { get; set; }
-           public double dAlt { get; set; }
+        public class RoadWayPointItem
+        {
+            public string strRoadName { get; set; }  // properties for road information
+            public string strRoadNo { get; set; }
+            public string strDirection { get; set; }
+            public string strDistance { get; set; }
+            public double dLat { get; set; }
+            public double dLon { get; set; }
+            public double dAlt { get; set; }
 
-           public double dWP_Lat { get; set; }
-           public double dWP_Lon { get; set; }
-           public double dWP_Alt { get; set; }
-           public int nGimbal_Pitch { get; set; }
-           public int nGimbal_Yaw { get; set; }
+            public double dWP_Lat { get; set; }
+            public double dWP_Lon { get; set; }
+            public double dWP_Alt { get; set; }
+            public int nGimbal_Pitch { get; set; }
+            public int nGimbal_Yaw { get; set; }
 
-           public bool bSkipable { get; set; }
+            public bool bSkipable { get; set; }
 
-           public int nCaution { get; set; }
-           public bool bSafeDown { get; set; }
+            public int nCaution { get; set; }
+            public bool bSafeDown { get; set; }
 
-           public RoadWayPointItem()
-           {
-               Clear();  // initialize properties uding Clear method
-           }
-           public RoadWayPointItem(double dWPLat, double dWPLon, double dWPAlt)
-           {
-               Clear();
-               dWP_Lat = dWPLat;
-               dWP_Lon = dWPLon;
-               dWP_Alt = dWPAlt;
-           }
-           public void Clear()
-           {
-               strRoadName = string.Empty;  // clear road information
-               strRoadNo = string.Empty;
-               strDirection = string.Empty;
-               strDistance = string.Empty;
-               dLat = 0.0f; 
-               dLon = 0.0f;
-               dAlt = 0.0f;
+            public RoadWayPointItem()
+            {
+                Clear();  // initialize properties uding Clear method
+            }
+            public RoadWayPointItem(double dWPLat, double dWPLon, double dWPAlt)
+            {
+                Clear();
+                dWP_Lat = dWPLat;
+                dWP_Lon = dWPLon;
+                dWP_Alt = dWPAlt;
+            }
+            public void Clear()
+            {
+                strRoadName = string.Empty;  // clear road information
+                strRoadNo = string.Empty;
+                strDirection = string.Empty;
+                strDistance = string.Empty;
+                dLat = 0.0f; 
+                dLon = 0.0f;
+                dAlt = 0.0f;
 
-               dWP_Lat = 0.0f; // clear waypoint information
-               dWP_Lon = 0.0f;
-               dWP_Alt = 0.0f;
+                dWP_Lat = 0.0f; // clear waypoint information
+                dWP_Lon = 0.0f;
+                dWP_Alt = 0.0f;
 
-               nGimbal_Pitch = 0;  // clear gimbal orientation
-               nGimbal_Yaw = 0;
+                nGimbal_Pitch = 0;  // clear gimbal orientation
+                nGimbal_Yaw = 0;
 
-               bSkipable = false;  // set waypoint as non-skipable by default
-           }
+                bSkipable = false;  // set waypoint as non-skipable by default
+            }
        }
-
        public class RoadWayPointItem1
        {
            public string strRoadName1 { get; set; } // Properties for road information
