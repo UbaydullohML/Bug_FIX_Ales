@@ -87,3 +87,9 @@
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/47294c5b-63f6-4daf-b4a3-1bbec83c6634)
 
 
+
+    GeoClassChanger.GeoPointsTaker geopointsTaker = new GeoClassChanger.GeoPointsTaker();
+    geopointsTaker.ProcessData(/* pass the required parameters here */);
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/e70e00b5-5132-49aa-9176-c75b28599a33)
+
