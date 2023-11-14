@@ -1,7 +1,6 @@
 My inputs:
 
 [ExternalTriggerEx.cs]
-Inside the namespace on 32 line
 
     nampespace argosgcs.argosGCS.ExternalTriggerController
     {
