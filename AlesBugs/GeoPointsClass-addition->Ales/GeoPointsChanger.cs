@@ -13,16 +13,6 @@ namespace argosgcs.argosGCS.PathPlanner
 {
     public class GeoClassChanger
     {
-        public class GeoPointstest
-        {
-            public int Index { get; set; }
-            public string Type { get; set; }
-            public double WP_Lat { get; set; }
-            public double WP_Lon { get; set; }
-            public double WP_Alt { get; set; }
-            public int Caution { get; set; }
-        }
-
         public class GeopointsTaker
         {
             public int UploadLoadCoordMap1(string strFilePath, out List<RoadWayPointItem> listSignCoord)
@@ -58,7 +48,7 @@ namespace argosgcs.argosGCS.PathPlanner
                         nCaution = int.Parse(strCol[14]),
                         bSafeDown = bool.Parse(strCol[15]),
                         nIndex = int.Parse(strCol[20]),
-                        nRindex = int.Parse(strCol[21]),
+                        nRindex = int.Parse(strCol[21])
                     };
 
                     listSignCoord.Add(item);
@@ -66,8 +56,15 @@ namespace argosgcs.argosGCS.PathPlanner
 
                 // Downsampling logic using k-means clustering
                 var records = listSignCoord.Select(r => new double[] { r.dWP_Lat, r.dWP_Lon }).ToArray();
-                int n_clusters = 200;
-                KMeans kmeans = new KMeans(n_clusters);
+
+                //int nClusters = 100;
+                //var p = 0.05;
+
+                double percentage = 0.20;
+                // calculate number of clusters based on percentage of total data points
+                int nClusters = (int)Math.Ceiling(listSignCoord.Count * percentage);
+
+                KMeans kmeans = new KMeans(nClusters);
                 KMeansClusterCollection clusters = kmeans.Learn(records);
                 var centroids = clusters.Centroids;
                 HashSet<RoadWayPointItem> selectedPoints = new HashSet<RoadWayPointItem>();
@@ -101,12 +98,12 @@ namespace argosgcs.argosGCS.PathPlanner
                         selectedPoints.Add(closestPoint);
                     }
                 }
-                
-            var sortedSelectedPoints1 = selectedPoints.OrderBy(p => p.nIndex);
-            
 
-            listSignCoord = sortedSelectedPoints1.ToList();
-            return listSignCoord.Count;
+                var sortedSelectedPoints1 = selectedPoints.OrderBy(p => p.nIndex);
+
+
+                listSignCoord = sortedSelectedPoints1.ToList();
+                return listSignCoord.Count;
             }
 
             private double CalculateDistance(double[] centroid, RoadWayPointItem dataPoint)
