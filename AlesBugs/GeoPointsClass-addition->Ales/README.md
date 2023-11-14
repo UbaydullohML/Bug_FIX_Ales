@@ -11,6 +11,8 @@ Correct outputs with the sorted data:
 
 
 20 percent output result:
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/98833cf5-5f2e-462c-bb17-f340a55e364a)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/46cdeb5a-53ee-4f7f-bc08-93981434e325)
 
 
 Output after sorted downsampled result:
