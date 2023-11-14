@@ -93,3 +93,8 @@
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/e70e00b5-5132-49aa-9176-c75b28599a33)
 
+- need to input below code to in order to be able to use clas instance:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/77a0644a-db25-4b8b-8287-0cb3dabfe25b)
+
+           using argosgcs.argosGcs.PathPlanner;  // inside the namespace
