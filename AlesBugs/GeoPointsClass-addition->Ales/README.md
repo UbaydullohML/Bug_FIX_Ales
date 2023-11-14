@@ -5,6 +5,13 @@ Correct outputs with the sorted data:
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/e7b4ffa0-a65c-48e7-a527-399a0b8f8251)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7e714366-3fe6-48c4-b521-3b8b3326bfca)
 
+30 percent output result:
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1248dbb3-5db2-4116-964d-003690e21264)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/0cb81cf2-a1f1-48d6-8ca1-3f0525a374c5)
+
+
+20 percent output result:
+
 
 Output after sorted downsampled result:
 
