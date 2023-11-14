@@ -19,18 +19,35 @@ inside the public class RoadWayPointItem
 
 this is for calling the PathPlanner folder class method [DownsampleLogic]
 
-    // New method of loading and parsing CSV 
-    string strRoadMapPath = GetUploadRoadMapFilePath(nMissionNo);
-    List<RoadWayPointItem> listSignCoord = new List<RoadWayPointItem>();
-    GeoClassChanger.GeopointsTaker Downsample = new GeoClassChanger.GeopointsTaker(); // creating instance of geopointsTaker
-    if (Downsample.DownsampleLogic(strRoadMapPath, out listSignCoord) < 1 )
-         return false;
+    public bool MakeUploadPatrp;Mission(DroneTwin droneTwin, int nMissionNo)
+    {
+        // New method of loading and parsing CSV 
+        string strRoadMapPath = GetUploadRoadMapFilePath(nMissionNo);
+        List<RoadWayPointItem> listSignCoord = new List<RoadWayPointItem>();
+        GeoClassChanger.GeopointsTaker Downsample = new GeoClassChanger.GeopointsTaker(); // creating instance of geopointsTaker
+        if (Downsample.DownsampleLogic(strRoadMapPath, out listSignCoord) < 1 )  // changes
+            return false;
+    }
 
 
 [ExRoa_DroneTwin.cs]
 
-    //Read MissionNo Csv File
-    string filePath = extExWay.GetUploadRoadMapFilePath(MissionNo);
-    List<RoadWayPointItem> listSignCoord = new List<RoadWayPointItem>();
-    GeoClassChanger.GeopointsTaker downsample = new GeoClassChanger.GeopointsTaker();
-    downsample.DownsampleLogic(filePath, out listSignCoord);
+    public async Task StartCheckCaution(int MissionNo, bool isRTLMission)
+    {
+        lock (_cautionLock)
+        {
+            _checkCautionTokenSource = new CancellationTokenSource();
+        }
+        try
+        {
+            //Read MissionNo Csv File
+            string filePath = extExWay.GetUploadRoadMapFilePath(MissionNo);
+            List<RoadWayPointItem> listSignCoord = new List<RoadWayPointItem>();
+            GeoClassChanger.GeopointsTaker downsample = new GeoClassChanger.GeopointsTaker(); // changes 
+            downsample.DownsampleLogic(filePath, out listSignCoord);   // changes 
+        }
+        catch (TaskCanceledException)
+        {                    
+            // do nothing as its expected
+        }
+    }
