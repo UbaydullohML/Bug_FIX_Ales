@@ -24,3 +24,44 @@ Output after sorted downsampled result:
 Error fix for importing the document in D folder and changing the location of strFilePath 
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/a62b83aa-176b-4698-aafe-399c873d43a1)
+
+
+
+original one:
+
+        public string GetUploadRoadMapFilePath(int nRoadNo)
+        {
+            if (nRoadNo == 0)
+                return "";
+            string strFilePath;
+            string strRoadString = GetUploadRoadNameFromRoadNo(nRoadNo);
+            if (strRoadString.Length < 1)
+                return "";
+            strFilePath = string.Format($"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}" + @"\" + $"{strRoadString}.csv");
+            return strFilePath;
+        }
+
+
+
+changed one:
+
+    namespace argosgcs.argosGCS.ExternalTriggerController
+    {
+        public class ExternalTriggerEx
+        {
+            public string ConvertSummaryToString(string summary)
+            {
+                public string GetUploadRoadMapFilePath(int nRoadNo)
+                {
+                    if (nRoadNo == 0)
+                      return "";
+                    string strFilePath;
+                    string strRoadString = GetUploadRoadNameFromRoadNo(nRoadNo);
+                    if (strRoadString.Length < 1)
+                        return "";
+                    strFilePath = string.Format($"D:\\models\\7.GeoPoints\\" + $"{strRoadString}.csv");
+                    return strFilePath;
+                }
+          }
+      }
+}
