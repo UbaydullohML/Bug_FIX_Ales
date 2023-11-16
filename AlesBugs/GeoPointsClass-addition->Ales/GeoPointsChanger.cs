@@ -41,9 +41,11 @@ namespace argosgcs.argosGCS.PathPlanner
                         strDistance = (strCol[3] == "") ? "" : strCol[7],
                         dLat = (strCol[8] == "") ? 0.0 : double.Parse(strCol[8]),
                         dLon = (strCol[9] == "") ? 0.0 : double.Parse(strCol[9]),
+                        //dAlt = (strCol[10] == "") ? 0.0 : double.Parse(strCol[10]),
                         dAlt = double.Parse(strCol[13]),
                         dWP_Lat = double.Parse(strCol[11]),
                         dWP_Lon = double.Parse(strCol[12]),
+                        //dWP_Alt = double.Parse(strCol[13]),
                         nCaution = int.Parse(strCol[14]),
                         bSafeDown = bool.Parse(strCol[15]),
                         nIndex = int.Parse(strCol[20])
@@ -125,14 +127,16 @@ namespace argosgcs.argosGCS.PathPlanner
                 // append the reversed list to the sorted list
                 listSignCoord.AddRange(reversedListSignCoord1 );
 
-
-                string outputPath = @"D:\models\7.GeoPoints\argosALES_desktop\output.csv"; // Replace with your desired directory and filename
+                // in order to store the csv file 
+                string outputPath = @"D:\models\7.GeoPoints\argosALES_desktop\output.csv";
 
                 using (var writer = new StreamWriter(outputPath))
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
                 {
                     csv.WriteRecords(listSignCoord);
                 }
+
+
                 return listSignCoord.Count;
             }
 
