@@ -108,16 +108,13 @@ namespace argosgcs.argosGCS.PathPlanner
                 listSignCoord.AddRange(reversedListSignCoord1 );
 
 
-                // Store listSignCoord to a CSV file
-                string outputPath = "output.csv"; // Change this to your desired output file path
+                string outputPath = @"D:\models\7.GeoPoints\argosALES_desktop\output.csv"; // Replace with your desired directory and filename
 
                 using (var writer = new StreamWriter(outputPath))
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
                 {
                     csv.WriteRecords(listSignCoord);
                 }
-
-
                 return listSignCoord.Count;
             }
 
