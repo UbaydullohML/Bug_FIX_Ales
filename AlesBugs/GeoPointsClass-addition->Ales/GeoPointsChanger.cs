@@ -115,6 +115,8 @@ namespace argosgcs.argosGCS.PathPlanner
                 {
                     csv.WriteRecords(listSignCoord);
                 }
+
+
                 return listSignCoord.Count;
             }
 
