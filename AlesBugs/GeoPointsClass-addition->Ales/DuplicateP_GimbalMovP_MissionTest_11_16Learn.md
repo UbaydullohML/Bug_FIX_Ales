@@ -1,6 +1,6 @@
 ## Table of Tasks:
 * [Duplicate_Points](#duplicate_Points)
-* [Gimbal_Movement](#gimbalMovement)
+* [Gimbal_Movement](#gimbal_Movement)
 * [SITL_Mission](#sitlmission)
 * [Test_Mission](#code)
   
