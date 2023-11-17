@@ -76,20 +76,23 @@ or
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/0a933ed3-c94d-4075-bbbf-697b07ce0090)
 
-if, after clicking the drone arming in the window we get the below output,
+if, after clicking the drone arming in the window, we get the below output,
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c4fa7074-ed12-4dad-884e-bba62169ceed)
 
-We set disarm delay second time like below and checked again:
+We set disarm delay a second time like below and rechecked:
 
     param set DISARM_DELAY 100
 
-After entering disarm delay like above, we DRONE ARM AND START PATROL MISSION
+After entering disarm delay like above, we DRONE ARM AND START PATROL MISSION.
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/44197dfb-917a-4a4d-a593-246018c41bf2)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/e6186a0b-bf5e-493f-a750-f2716a5d5b03)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c5e4b55b-1ac8-4ee0-bc22-903511a5805d)
 
-and to see the waypoints in SITL, we code like below
+after start mission we could see the mode is changed to AUTO
+
+To see the waypoints in SITL, we code like the below.
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c0c04ab2-73fb-42b3-933b-d46f1f11d638)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c6f6460f-5477-4a5f-a49a-dbb23cf2d68f)
