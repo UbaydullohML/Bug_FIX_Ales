@@ -1,11 +1,11 @@
 ## Table of Tasks:
-* [Duplicate_Points](#duplicate_Points)
+* [Duplicate Points](#duplicate_Points)
 * [Gimbal Movement](#gimbal_Movement)
-* [SITL_Mission](#sitlmission)
-* [Test_Mission](#code)
+* [SITL Mission Planning](#sitl_mission_planning)
+* [Test Mission](#code)
   
 
-## Duplicate Points
+## Duplicate_Points
 
 Task:
 - the first and last points' duplicates have been fixed like the below (in order not to take the duplicates, cause the last point needs only 1 waypoint, no duplicate):
@@ -26,7 +26,10 @@ Task:
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/41701f95-7d3f-45e9-bafc-6f171f34737a)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/d408439a-ffcc-4a50-9058-21045ae5399d)
 
-## Test Mission:
+## SITL_Mission_Planning
+
+
+## Test_Mission:
 
 Task:
 - the code successfully down-sampled with caution values included/YawPitch degree movement waypoints caught/ with k-means clustering
