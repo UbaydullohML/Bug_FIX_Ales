@@ -1,6 +1,6 @@
 ## Table of Tasks:
 * [Duplicate_Points](#duplicate_Points)
-* [Gimbal_Movement](#gimbal_Movement)
+* [Gimbal Movement](#gimbal_Movement)
 * [SITL_Mission](#sitlmission)
 * [Test_Mission](#code)
   
@@ -15,7 +15,7 @@ Task:
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1faf2d71-cd2a-43b9-8c3f-14078845fed9)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/96766845-06ed-4507-ab2c-bf0928bf919f)
 
-## Gimbal Movement
+## Gimbal_Movement
 
 Task:
 - The gimbal yaw and pitch catching code has been inserted, and it catches gimbal moved waypoints:
