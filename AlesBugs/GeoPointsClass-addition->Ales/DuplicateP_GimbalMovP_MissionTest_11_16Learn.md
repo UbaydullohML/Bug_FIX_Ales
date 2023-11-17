@@ -1,9 +1,11 @@
 ## Table of Tasks:
 * [Duplicate_Points](#duplicatePoints)
 * [Gimbal_Movement](#gimbalMovement)
+* [SITL_Mission](#sitlmission)
 * [Test_Mission](#code)
+  
 
-## Duplicate Points
+## Duplicate_Points
 
 Task:
 - the first and last points' duplicates have been fixed like the below (in order not to take the duplicates, cause the last point needs only 1 waypoint, no duplicate):
@@ -13,7 +15,7 @@ Task:
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1faf2d71-cd2a-43b9-8c3f-14078845fed9)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/96766845-06ed-4507-ab2c-bf0928bf919f)
 
-## Gimbal Movement
+## Gimbal_Movement
 
 Task:
 - The gimbal yaw and pitch catching code has been inserted, and it catches gimbal moved waypoints:
