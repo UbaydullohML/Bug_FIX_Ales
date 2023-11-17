@@ -1,11 +1,11 @@
 ## Table of Tasks:
-* [Duplicate_Points](#duplicatePoints)
+* [Duplicate_Points](#duplicate_Points)
 * [Gimbal_Movement](#gimbalMovement)
 * [SITL_Mission](#sitlmission)
 * [Test_Mission](#code)
   
 
-## Duplicate_Points
+## Duplicate Points
 
 Task:
 - the first and last points' duplicates have been fixed like the below (in order not to take the duplicates, cause the last point needs only 1 waypoint, no duplicate):
