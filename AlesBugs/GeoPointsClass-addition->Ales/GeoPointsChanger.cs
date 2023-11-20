@@ -51,7 +51,7 @@ namespace argosgcs.argosGCS.PathPlanner
                         nGimbal_Pitch = int.Parse(strCol[18]),
                         nGimbal_Yaw = int.Parse(strCol[19]),
                         nIndex = int.Parse(strCol[20])
-                        
+
                     };
 
                     listSignCoord.Add(item);
@@ -138,7 +138,7 @@ namespace argosgcs.argosGCS.PathPlanner
 
                 // duplicate the sorted list
                 //var reversedListSignCoord1 = listSignCoord.Skip(1).Take(listSignCoord.Count - 2).ToList();
-                var reversedListSignCoord1 = listSignCoord.Take(listSignCoord.Count - 1).ToList(); 
+                var reversedListSignCoord1 = listSignCoord.Take(listSignCoord.Count - 1).ToList();
 
                 // reverse the duplicate list
                 reversedListSignCoord1.Reverse();
@@ -146,15 +146,15 @@ namespace argosgcs.argosGCS.PathPlanner
                 // append the reversed list to the sorted list
                 listSignCoord.AddRange(reversedListSignCoord1);
 
-
+#if false 
                 // in order to store the csv file 
-                //string outputPath = @"D:\models\7.GeoPoints\argosALES_desktop\output.csv";
-                //using (var writer = new StreamWriter(outputPath))
-                //using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
-                //{
-                //    csv.WriteRecords(listSignCoord);
-                //}
-
+                string outputPath = @"D:\models\7.GeoPoints\argosALES_desktop\output2.4.12.csv"; 
+                using (var writer = new StreamWriter(outputPath))
+                using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                {
+                    csv.WriteRecords(listSignCoord);
+                }
+#endif 
 
                 return listSignCoord.Count;
             }
