@@ -1,3 +1,7 @@
+## Table of Content
+* [Intro](#intro)
+* [QuickF rtl](#quickf_rtl)
+
 Correct outputs with the sorted data:
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7f27f631-a082-495a-9851-8d17aab0b689)
@@ -65,4 +69,25 @@ changed one:
             }
         }
     }
+
+## QuickF_rtl
+- Additions to GeoPointsChanger
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/830de4aa-54a9-4963-b9cc-64bce02928c6)
+
+- main changes to ExternalTriggerEx.cs
+  
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/8f9b8cdf-83b9-414f-8cff-936dd2ae54ca)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/80bf62ef-7c2d-4054-93fd-74101825b8c4)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/a0cde3e6-f7c8-41fe-a9b7-faa982c2a613)
+
+- old
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c08bfa80-6db1-421f-8780-2e47ce5e2169)
+
+- another change in ExRoad_DroneTwin.cs
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/f617854c-04ef-4d1a-b2e4-624d9599e115)
+
+
 
