@@ -75,19 +75,44 @@ changed one:
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/830de4aa-54a9-4963-b9cc-64bce02928c6)
 
-- main changes to ExternalTriggerEx.cs
+main changes to ExternalTriggerEx.cs
   
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/8f9b8cdf-83b9-414f-8cff-936dd2ae54ca)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/80bf62ef-7c2d-4054-93fd-74101825b8c4)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/a0cde3e6-f7c8-41fe-a9b7-faa982c2a613)
 
-- old
+old
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c08bfa80-6db1-421f-8780-2e47ce5e2169)
 
-- another change in ExRoad_DroneTwin.cs
+another change in ExRoad_DroneTwin.cs
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/f617854c-04ef-4d1a-b2e4-624d9599e115)
 
+- test
+Quick Flight and Return to near station
+the code for creating down sample for quick flight part has been added and tested:
 
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/8df490ea-d5c2-4491-a8f2-6ab9865986a8)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/88c673be-17f0-4402-9d5c-26142eb02a0d)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/be789722-fd15-4ad8-854c-fd324b9210b5)
+
+Return to near station
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/88a99bb2-6849-4fcc-9805-079cd6d6f17f)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/ead57f39-bf02-4069-b84d-70b26cd251f7)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/68b09d96-ef5e-4bb4-96cd-7450f10d3b9b)
+
+
+- Battery percent improver code: (if exception happens)
+
+code
+
+    param set SIM_BATT_VOLTAGE 27
+    
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/167c6bc7-35a4-4df1-8ab9-3ffb04ecbcc8)
+
+    param set WPNAV_SPEED 50  // for improving speed of drone
+
+    wp list // for showing waypoints on sitl
 
