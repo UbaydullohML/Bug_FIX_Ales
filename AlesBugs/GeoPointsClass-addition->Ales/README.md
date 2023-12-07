@@ -2,6 +2,7 @@
 * [Intro](#intro)
 * [QuickF rtl](#quickf_rtl)
 * [CSV](#csv)
+* [Tech Doc](#tech_doc)
 
 Correct outputs with the sorted data:
 
@@ -125,4 +126,8 @@ code
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/bf38d32c-26bc-49b3-aa38-8dac0e5d9abf)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/47a7fd0d-915b-4374-826b-f874d37a86ae)
+
+
+## Tech_Doc
+
 
