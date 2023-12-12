@@ -4,6 +4,7 @@
 * [CSV](#csv)
 * [Tech Doc](#tech_doc)
 * [Test](#test)
+* [Bugs](#bugs)
 
 Correct outputs with the sorted data:
 
@@ -138,4 +139,12 @@ code
 - to comment the battery and weather failsafe
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c3ff0646-e8d6-4c72-8302-5f303b197534)
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/688f6679-548d-4d6f-b579-8a292608640a)
+
+
+## Bugs
+- links for fixing installer part issue
+
+https://stackoverflow.com/questions/17681432/how-can-i-enable-assembly-binding-logging
+https://stackoverflow.com/questions/255669/how-to-enable-assembly-bind-failure-logging-fusion-in-net
+
 
