@@ -3,6 +3,7 @@
 * [QuickF rtl](#quickf_rtl)
 * [CSV](#csv)
 * [Tech Doc](#tech_doc)
+* [Test](#test)
 
 Correct outputs with the sorted data:
 
@@ -130,4 +131,11 @@ code
 
 ## Tech_Doc
 
+
+
+## Test
+
+- to comment the battery and weather failsafe
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/c3ff0646-e8d6-4c72-8302-5f303b197534)
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/688f6679-548d-4d6f-b579-8a292608640a)
 
