@@ -5,7 +5,7 @@
 * [Tech Doc](#tech_doc)
 * [Test](#test)
 * [Bugs](#bugs)
-
+   
 Correct outputs with the sorted data:
 
 ![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7f27f631-a082-495a-9851-8d17aab0b689)
