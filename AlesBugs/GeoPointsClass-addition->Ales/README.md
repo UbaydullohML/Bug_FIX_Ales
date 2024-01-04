@@ -5,6 +5,8 @@
 * [Tech Doc](#tech_doc)
 * [Test](#test)
 * [Bugs](#bugs)
+* [ifCondition](#ifcondition)
+* [Fix_Bugs](#fix_bugs)
    
 Correct outputs with the sorted data:
 
@@ -146,6 +148,43 @@ code
 
 https://stackoverflow.com/questions/17681432/how-can-i-enable-assembly-binding-logging
 https://stackoverflow.com/questions/255669/how-to-enable-assembly-bind-failure-logging-fusion-in-net
+
+
+
+## ifCondition
+- edited the condition like below:
+
+in Pannam file there is the Flag column, if the value inside column is 2 which means 2 way:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7de40d03-3620-490b-be47-846f45462c20)
+
+it caches the if case, like below:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/4affc6ca-c28b-4a85-8fab-b1ba4659bf1b)
+
+otherwise else case like below:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/e295d6e1-aa66-46ae-82e0-8d2adffb6d87)
+
+it runs the else condition:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1e073c17-764f-44cf-b014-c3879b547820)
+
+
+- outputs after edit of code: PatrolPathUpload + QuickFlight
+
+Pannam File
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/7ec575ce-c8e3-4776-be20-82efd133bbfd)
+
+Going to Sanne File
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/8f6633e3-4274-4432-9e8c-7df28adaaaf5)
+
+
+- all four files will be uploaded to github as like below format:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/1ab9121e-bce5-4cba-b9d3-08b0bae1bb68)
 
 
 
