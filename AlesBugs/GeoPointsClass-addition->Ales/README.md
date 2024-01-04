@@ -6,7 +6,7 @@
 * [Test](#test)
 * [Bugs](#bugs)
 * [ifCondition](#ifcondition)
-* [Fix_Bugs](#fix_bugs)
+* [Fix_InstallerIssue](#fix_InstallerIssue)
    
 Correct outputs with the sorted data:
 
@@ -188,4 +188,51 @@ Going to Sanne File
 
 
 
-## Fix_Bugs
+## Fix_InstallerIssue
+
+- Installer file
+
+now there is issue happening when the installer files is build and when it is used:
+
+as like below related to nuget .net related plugin issue:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/521763dc-7cb6-4dd7-ab47-96a31eebdba1)
+
+we are taking the msi file which creates the ales.exe format file
+
+but when ales.exe is being runned, it is not loading the necessary library used for downsampling inside msi built .exe.
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/4ce4264f-8756-481c-ba44-61f76f468785)
+
+
+- build installer file:
+
+issue is solved by creating 1 file and edition another file inside argosGcsInstaller folder:
+
+which created this file which accesses the missing previous .net plugins related to k-means clustering
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/49d14648-9ed1-4360-ba0a-63c5a3a8f954)
+
+and they are added here to be called by their Ids:
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/f7aa1281-f286-4986-acb3-18399ea09340)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/35c73e20-2641-4764-a8ba-215602039da8)
+
+this also needs to be added
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/89c3b11e-13c7-4bf0-965a-afed90b64e99)
+
+
+- results
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/fdf2d0e4-2755-46ec-80f4-a9af9df632af)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/5eb831b1-c0ae-4a65-b3ea-486b520018e1)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/d4b46d55-f88d-4306-a1f7-9ea2b7794f66)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/9ff52d79-9724-489f-86f6-c931e1c3f1aa)
+
+![image](https://github.com/UbaydullohML/VS-Projects/assets/75980506/5afd5631-ef5e-4c43-99fc-c22ba9e90195)
+
