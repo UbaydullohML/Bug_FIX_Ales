@@ -54,7 +54,8 @@ namespace argosgcs.argosGCS.PathPlanner
                         nGimbal_Pitch = int.Parse(strCol[18]),
                         nGimbal_Yaw = int.Parse(strCol[19]),
                         nIndex = int.Parse(strCol[20]),
-                        WPIndex = (strCol[21] == "") ? 0 : int.Parse(strCol[21])
+                        WPIndex = (strCol[21] == "") ? 0 : int.Parse(strCol[21]),
+                        nFlag = (strCol[22] == "") ? 0 : int.Parse(strCol[22])
 
                     };
 
@@ -67,11 +68,11 @@ namespace argosgcs.argosGCS.PathPlanner
 
                 double percentage = 0.17;
 
-                // define the threshold for determining the condition
+                bool FlagTwoRoundTrip = listSignCoord.Any(point => point.nFlag == 2);
 
-                if (listSignCoord.Count >= 360 && listSignCoord.Count <= 380)
+                if (FlagTwoRoundTrip)
                 {
-                    // downsampling logic for waypoints count <= 650
+                    // downsampling logic for flag 2 = round trip
 
                     // calculate number of clusters based on percentage of total data points
                     int nClusters = (int)Math.Ceiling(listSignCoord.Count * percentage);
