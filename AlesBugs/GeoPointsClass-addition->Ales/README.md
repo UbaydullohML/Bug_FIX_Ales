@@ -125,6 +125,11 @@ code
     wp list // for showing waypoints on sitl
 
 
+      param set DISARM_DELAY 200.0
+      param show DISARM_DELAY 
+
+![image](https://github.com/user-attachments/assets/243c10b6-1198-4cf2-8205-4168fdaf6e33)
+
 
 ## CSV
 
